@@ -17,7 +17,8 @@ const cars = [
 ]
 
 // Array con auto solo a benzina
-const benzinaOnly = cars.filter(car => car.fuel == 'benzina')
+const benzinaOnly = cars.filter(car => car.fuel == 'benzina');
+console.log("\n\nMacchine a benzina:");
 console.log(benzinaOnly);
 
 // Array con auto solo a diesel 
@@ -27,6 +28,7 @@ cars.forEach(car => {
     dieselOnly.push(car);
   }
 })
+console.log("\n\nMacchine a diesel:");
 console.log(dieselOnly);
 
 // Array con auto che non sono né a benzina né a diesel
@@ -36,4 +38,5 @@ cars.forEach(car => {
     otherOnly.push(car);
   }
 });
+console.log("\n\nMacchine che non sono né a benzina né a diesel:");
 console.log(otherOnly);

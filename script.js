@@ -28,3 +28,12 @@ cars.forEach(car => {
   }
 })
 console.log(dieselOnly);
+
+// Array con auto che non sono né a benzina né a diesel
+const otherOnly = [];
+cars.forEach(car => {
+  if (car.fuel !== 'benzina' && car.fuel !== 'diesel') {
+    otherOnly.push(car);
+  }
+});
+console.log(otherOnly);

@@ -15,3 +15,7 @@ const cars = [
   { brand: 'Mercedes', model: 'Classe C', fuel: 'elettrico' },
   { brand: 'Peugeot', model: '208', fuel: 'metano' }
 ]
+
+// Array con auto solo a benzina
+const benzinaOnly = cars.filter(car => car.fuel == 'benzina')
+console.log(benzinaOnly);
